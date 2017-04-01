@@ -61,11 +61,18 @@
     </header>
     <div class="entry">
       
-        <h2 id="webpack"><a href="#webpack" class="headerlink" title="webpack"></a>webpack</h2><ul>
+        <h1 id="1-webpack"><a href="#1-webpack" class="headerlink" title="1.webpack"></a>1.webpack</h1><ul>
 <li>Webpack是一个模块打包器.</li>
 <li>将根据模块的依赖关系进行静态分析.</li>
 <li>然后将这些模块按照指定的规则生成对应的静态资源.<br><img src="/2017/04/01/webpack学习/webpack.png" alt=""></li>
 </ul>
+<h1 id="2-为什么要这样加载"><a href="#2-为什么要这样加载" class="headerlink" title="2.为什么要这样加载"></a>2.为什么要这样加载</h1><ul>
+<li>为了使初始化加载时耗时尽量少–涉及性能问题（不解释）</li>
+<li>将所有的依赖拆分成按需加载的块</li>
+<li>适合大项目，无论是SPA还是多页web应用</li>
+</ul>
+<h1 id="3-Webpack的特点"><a href="#3-Webpack的特点" class="headerlink" title="3.Webpack的特点"></a>3.Webpack的特点</h1><p>Webpack和其他的模块化工具有什么区别？</p>
+<h3 id="代码拆分"><a href="#代码拆分" class="headerlink" title="代码拆分"></a>代码拆分</h3><p>Webpack有两种组织模块依赖的方式：同步和异步。异步依赖作为一个分割点，形成新的块。在优化了依赖树后，每一个异步区块都作为</p>
 
       
     </div>
